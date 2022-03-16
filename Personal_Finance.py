@@ -32,7 +32,7 @@ class web(object):
     def __init__(self, headless=True):
         
         KeePass = input("Enter KeePass: ")
-        self.kp = PyKeePass('/home/paul/Documents/Passwords.kdbx', password=KeePass)
+        self.kp = PyKeePass('Passwords.kdbx', password=KeePass)
         
         # selenium setup
         o = s.webdriver.FirefoxOptions()
